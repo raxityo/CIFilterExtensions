@@ -58,7 +58,7 @@ public extension CIFilter {
     ///
     /// - returns: Generated CIFilter (you can get result with ["outputImage"])
     @available(iOS 6, *)
-    public static func affineClamp(inputImage: CIImage, inputTransform: NSValue = NSValue(cgAffineTransform:  CGAffineTransform(a: 1.0, b: 0.0, c: 0.0, d: 1.0, tx: 0.0, ty: 0.0))) -> CIFilter? {
+    public static func affineClamp(inputImage: CIImage, inputTransform: NSValue = NSValue(nonretainedObject:  CGAffineTransform(a: 1.0, b: 0.0, c: 0.0, d: 1.0, tx: 0.0, ty: 0.0))) -> CIFilter? {
         guard let filter = CIFilter(name: "CIAffineClamp") else {
             return nil
         }
@@ -75,7 +75,7 @@ public extension CIFilter {
     ///
     /// - returns: Generated CIFilter (you can get result with ["outputImage"])
     @available(iOS 6, *)
-    public static func affineTile(inputImage: CIImage, inputTransform: NSValue = NSValue(cgAffineTransform:  CGAffineTransform(a: 1.0, b: 0.0, c: 0.0, d: 1.0, tx: 0.0, ty: 0.0))) -> CIFilter? {
+    public static func affineTile(inputImage: CIImage, inputTransform: NSValue = NSValue(nonretainedObject:  CGAffineTransform(a: 1.0, b: 0.0, c: 0.0, d: 1.0, tx: 0.0, ty: 0.0))) -> CIFilter? {
         guard let filter = CIFilter(name: "CIAffineTile") else {
             return nil
         }
@@ -92,7 +92,7 @@ public extension CIFilter {
     ///
     /// - returns: Generated CIFilter (you can get result with ["outputImage"])
     @available(iOS 5, *)
-    public static func affineTransform(inputImage: CIImage, inputTransform: NSValue = NSValue(cgAffineTransform:  CGAffineTransform(a: 1.0, b: 0.0, c: 0.0, d: 1.0, tx: 0.0, ty: 0.0))) -> CIFilter? {
+    public static func affineTransform(inputImage: CIImage, inputTransform: NSValue = NSValue(nonretainedObject:  CGAffineTransform(a: 1.0, b: 0.0, c: 0.0, d: 1.0, tx: 0.0, ty: 0.0))) -> CIFilter? {
         guard let filter = CIFilter(name: "CIAffineTransform") else {
             return nil
         }
